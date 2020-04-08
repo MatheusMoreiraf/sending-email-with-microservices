@@ -42,6 +42,11 @@ services:
       - data
       - web
       - queuenet
+    environment:
+      - DB_HOST=db
+      - DB_NAME=email_sender
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
     depends_on:
       - db
       - queue
