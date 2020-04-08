@@ -12,14 +12,14 @@ Project for sending email with workers (microservices). Project architecture ima
 ### Boot containers  
 
 ```
-docker-compose up [options]
+docker-compose up [options] [--scale SERVICE=NUM...]
 ``` 
 > Option '-d', runs the containers in the background, print new container names.
+
 ### Delete containers  
 ```
 docker-compose down
 ```
-
 > ContainerDelete command does NOT delete data and contents.  
 
 ## Bug fixing
