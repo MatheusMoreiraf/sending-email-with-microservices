@@ -17,7 +17,7 @@ services:
     networks:
       - data
     environment:
-      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_PASSWORD: "you_pass"
   fontend:
     image: nginx:1.13
     volumes:
@@ -65,4 +65,3 @@ services:
       - queuenet
     depends_on:
       - queue
-
