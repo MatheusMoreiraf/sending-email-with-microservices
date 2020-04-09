@@ -14,13 +14,12 @@ Project for sending email with workers (microservices). Project architecture ima
 ```
 docker-compose up [options] [--scale SERVICE=NUM...]
 ``` 
-> Option '-d', runs the containers in the background, print new container names.
+> Ex: docker-compose up -d --scale worker=3
 
-### Delete containers  
+### Stop containers  
 ```
 docker-compose down
-```
-> ContainerDelete command does NOT delete data and contents.  
+```  
 
 ## Bug fixing
 
